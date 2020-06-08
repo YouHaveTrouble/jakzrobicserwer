@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>Jak zrobić serwer?</title>
+    <link rel="stylesheet" href="/style/terraria.css">
+    <script src="/js/terraria.js" charset="utf-8"></script>
+    <meta charset="UTF-8">
+</head>
+<body onload="onLoad()">
+
+    <div class="mainwrap">
+        <div class="wrapper">
+            <div class="window">
+                <div class="title">
+                    <a>Terraria</a>
+                </div>
+                <div class="element">
+                    <p>Liczba graczy</p>
+                    <input class="input" type="number" id="playercount" placeholder="1">
+                </div>
+                <div class="element">
+                    <p>Wielkosc Swiata</p>
+                    <select id="worldsize" class="input">
+                        <option value="1">Maly</option>
+                        <option value="2">Sredni</option>
+                        <option value="3">Duzy</option>
+                    </select>
+                </div>
+                <div id="lspromo" class="element">
+                    <p>Sprawdz <a href="https://www.laststation.pl/sklep/">laststation.pl</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="window">
+                <div class="title">
+                    <a>Specyfikacje Serwera</a>
+                </div>
+                <div class="element">
+                    <p class="result">RAM: <span id="ramvalue">-.-</span>GB</p>
+                </div>
+                <div class="element">
+                    <p class="result">CPU: <span id="cpuvalue">-.-</span>GHz</p>
+                </div>
+                <a class="note">Wymagania dla serwera dedykowanego.</a>
+            <div>
+        </div>
+    </div>
+</body>

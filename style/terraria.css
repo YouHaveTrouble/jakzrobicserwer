@@ -1,0 +1,154 @@
+
+body {
+    background-image: url("../assets/terraria-bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    font-size: 1em;
+}
+
+@font-face {
+    font-family: 'Terraria';
+    src: url('../assets/font/terraria.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.mainwrap {
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 1980px;
+    text-align: center;
+}
+
+
+.window {
+    position: relative;
+    margin: 2em;
+    font-family: "Terraria";
+    font-size: 2em;
+    padding: 0.5em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    min-width: 320px;
+    max-width: 450px;
+    text-align: center;
+    font-weight: normal;
+    font-style: normal;
+    background-color: rgba(16, 20, 60, 0.9);
+    border: 3px solid #000;
+    border-radius: 1em;
+}
+
+.window .element {
+    width: 100%;
+    height: auto;
+}
+
+.window .title {
+    font-size: 1.2em;
+}
+
+.window .element p {
+    margin-bottom: 0;
+    font-size: 1em;
+}
+.window .element p a {
+    color: white;
+}
+#lspromo {
+    margin-top: 1.2em;
+}
+
+.window .element input {
+    background-color: rgba(31, 38, 119, 0.85);
+    border: 2px solid #000;
+    width: 250px;
+    height: 1.25em;
+    padding-top: 0.25em;
+    border-radius: 0.5em;
+    color: #fff;
+    font-family: "Terraria";
+    font-size: 0.85em;
+    text-align: center;
+}
+
+.window .element input:hover {
+    border-color: #fff;
+}
+.window .element input:focus {
+    border-color: rgb(124, 124, 124);
+}
+
+.window .element select {
+    width: 250px;
+    font-size: 0.85em;
+    height: 1.75em;
+    font-family: "Terraria";
+    background-color: rgba(31, 38, 119, 0.85);
+    border: 2px solid #000;
+    text-align-last: center;
+    color: #fff;
+    padding-top: 0.15em;
+    border-radius: 0.5em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+.window .element select:hover {
+    border-color: #fff;
+}
+.window .element select:focus {
+    border-color: rgb(124, 124, 124);
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.note {
+    margin-top: 1em;
+    font-size: 0.7em;
+    color: rgb(156, 156, 156);
+}
+
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 1.5em;
+    }
+
+    .mainwrap {
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+    }
+
+
+    .window {
+        margin: 0;
+        margin-top: 1.5em;
+        width: 100%;
+        min-width: unset;
+        max-width: unset;
+        justify-self: center;
+    }
+}

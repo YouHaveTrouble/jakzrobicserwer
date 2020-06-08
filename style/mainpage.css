@@ -1,0 +1,20 @@
+.wrapper {
+    color: white;
+    margin: 0 auto;
+    width: 50%;
+    padding: 4vmin;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.wrapper h1 {
+    font-size: calc(1.5vmax + 0.5vmin);
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper p {
+    font-size: calc(1.2vmax + 0.7vmin);
+}
+.wrapper p a {
+    color: white;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jak zrobić serwer?</title>
+        <link rel="stylesheet" href="/style/minecraft.css">
+        <script src="/js/minecraft.js" charset="utf-8"></script>
+        <meta charset="UTF-8">
+    </head>
+    <body onload="onLoad()">
+        <div class=mainwrap>
+        <div class="column">
+            <div class="element100">
+                <h1>Minecraft</h1>
+            </div>
+            <div id="choice1" class="element100 element">
+                <a>Gracze:</a>
+                <p>Ilu graczy bedzie jednoczesnie na serwerze?</p>
+                <input type="number" maxlength="3" id="playeramountchoice">
+            </div>
+            <div id="choice2" class="element100 element">
+                <a>Pluginy:</a>
+                <p>Ilu pluginów zamierzasz uzyc?</p>
+                <input type="number" id="pluginamountchoice">
+            </div>
+            <div id="choice3" class="element100 element">
+                <a>Wersja gry:</a>
+                <p>Jaka ma byc wersja serwera?</p>
+                <select id="versionchoice">
+                    <option value="1.15">1.15</option>
+                    <option value="1.14">1.14</option>
+                    <option value="1.13">1.13</option>
+                    <option value="1.12">1.12</option>
+                    <option value="1.11">1.11</option>
+                    <option value="1.10">1.10</option>
+                    <option value="1.9">1.9</option>
+                    <option value="1.8">1.8</option>
+                </select>
+            </div>
+            <div class="element100">
+                <p id="randomad"></p>
+                <p id="lsplug"></p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="element element100">
+                <h1>Specyfikacje serwera</h1>
+            </div>
+            <div class="row">
+                <div id="silnik" class="element50">
+                <a id="return1">---</a>
+                <p>Silnik serwera</p>
+            </div>
+            <div id="typhosta" class="element50">
+                <a id="return2">---</a>
+                <p>Typ Hostingu</p>
+            </div>
+            </div>
+            <div class="row">
+            <div id="iloscram" class="element50">
+                <a id="return3">---</a>
+                <p>RAM</p>
+            </div>
+            <div id="ilosccpu" class="element50">
+                <a id="return4">---</a>
+                <p>Procesor</p>
+            </div>
+            </div>
+            <div class="descriptor">
+                <p id="descbox1">---</p>
+            </div>
+            <div class="element100">
+                <h1>Sugestie</h1>
+            </div>
+            <div class="row">
+                <div id="silnikdownload" class="element50">
+                    <a id="return5">---</a>
+                    <p>Pobierz silnik</p>
+                </div>
+                <div id="buyhost" class="element50">
+                    <a id="return6">---</a>
+                    <p>Polecany host</p>
+                </div>
+            </div>
+            
+            <div class="descriptor">
+                <p id="hostspecific">---</p>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
