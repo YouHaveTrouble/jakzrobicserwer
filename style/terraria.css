@@ -30,22 +30,20 @@ body {
     text-align: center;
 }
 
-
 .window {
     position: relative;
-    margin: 2em;
+    margin: 2em 0.5em;
     font-family: "Terraria";
     font-size: 2em;
     padding: 0.5em;
     color: white;
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
+    height: 100%;
     min-width: 320px;
     max-width: 450px;
     text-align: center;
-    font-weight: normal;
-    font-style: normal;
     background-color: rgba(16, 20, 60, 0.9);
     border: 3px solid #000;
     border-radius: 1em;
@@ -53,7 +51,6 @@ body {
 
 .window .element {
     width: 100%;
-    height: auto;
 }
 
 .window .title {
